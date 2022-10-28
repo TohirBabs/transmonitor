@@ -3,9 +3,6 @@ import "./sidebar.scss";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <div className="top">
-        <span className="logo">TransMonitor</span>
-      </div>
       <div className="center">
         <ul>
           <li>
