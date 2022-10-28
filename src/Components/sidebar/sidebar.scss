@@ -1,0 +1,20 @@
+.sidebar {
+    flex: 1;
+
+    .top {
+
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1875F0;
+            font-family: "Roboto";
+        }
+    }
+
+    hr {}
+}
