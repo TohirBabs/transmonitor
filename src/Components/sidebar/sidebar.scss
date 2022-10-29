@@ -4,7 +4,7 @@
     gap: 1rem;
     color: #647787;
     font-size: 0.9rem;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 
     ul {
         list-style: none;
@@ -33,9 +33,6 @@
         transition: color 0.5s;
     }
 
-    svg {
-        color: inherit;
-    }
 
     button:hover {
         background-color: white;
@@ -44,10 +41,10 @@
 
     .navigation {
 
-        .main,
+        .main_nav,
         .payments,
         .orders {
-            margin: 1.5rem 0;
+            margin: 1.3rem 0;
         }
 
 
@@ -70,6 +67,10 @@
             color: rgba(24, 117, 240);
             border-left: 4px solid rgba(24, 117, 240);
 
+        }
+
+        .profile {
+            margin-top: 1.5rem;
         }
     }
 }

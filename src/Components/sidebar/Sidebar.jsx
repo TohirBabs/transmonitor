@@ -41,9 +41,9 @@ const Sidebar = () => {
     <div className="sidebar">
       <button className="cta">GENERATE INVOICE</button>
       <div className="navigation">
-        <div className="main">
+        <div className="main_nav">
           <h3>Main</h3>
-          <SideNavItem name="Overview" icon={<OverviewIcon />} />;
+          <SideNavItem name="Overview" icon={<OverviewIcon />} />
         </div>
         <div className="payments">
           <h3>Payments</h3>

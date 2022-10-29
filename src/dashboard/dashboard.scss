@@ -4,6 +4,16 @@
     margin: 0;
 }
 
+input {
+    background-color: transparent;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+    font-family: "Segoe UI";
+}
+
 .dashboard {
     display: flex;
     flex-direction: column;
