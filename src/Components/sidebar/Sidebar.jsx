@@ -1,18 +1,36 @@
 import { useState } from "react";
-import DashboardIcon from "@mui/icons-material/Dashboard";
 import "./sidebar.scss";
+import { OverviewIcon } from "./icons/OverviewIcon";
+import { WalletIcon } from "./icons/WalletIcon";
+import { ApprovedWalletIcon } from "./icons/ApprovedWalletIcon";
+import { CancelledWalletIcon } from "./icons/CancelledWalletIcon";
+import { SettlementIcon } from "./icons/settlementIcon";
+import { OrderIcon } from "./icons/OrderIcon";
+import { PendingOrderIcon } from "./icons/PendingOrderIcon";
+import { ApprovedOrderIcon } from "./icons/ApprovedOrderIcon";
+import { UserIcon } from "./icons/UserIcon";
 
 const Sidebar = () => {
   const paymentNavs = [
-    { name: "All Payments", icon: "/assets/icons/search_icon.png" },
-    { name: "Reconciled Payments", icon: "/assets/icons/search_icon.png" },
-    { name: "Un - Reconciled Payments", icon: "/assets/icons/search_icon.png" },
-    { name: "Manual Settlement", icon: "/assets/icons/search_icon.png" },
+    { name: "All Payments", icon: <WalletIcon /> },
+    { name: "Reconciled Payments", icon: <ApprovedWalletIcon /> },
+    { name: "Un - Reconciled Payments", icon: <CancelledWalletIcon /> },
+    { name: "Manual Settlement", icon: <SettlementIcon /> },
   ];
+
+  const orderNavs = [
+    { name: "All Orders", icon: <OrderIcon /> },
+    { name: "Pending Orders", icon: <PendingOrderIcon /> },
+    { name: "Reconciled Orders", icon: <ApprovedOrderIcon /> },
+  ];
+
   const SideNavItem = ({ name, icon }) => {
     return (
-      <li className={`nav ${activeNav === name ? "active" : ""}`}>
-        <img src={icon} />
+      <li
+        onClick={() => setactiveNav(name)}
+        className={`nav ${activeNav === name ? "active" : ""}`}
+      >
+        {icon}
         <p>{name}</p>
       </li>
     );
@@ -25,48 +43,26 @@ const Sidebar = () => {
       <div className="navigation">
         <div className="main">
           <h3>Main</h3>
-          <SideNavItem name="Overview" icon="/assets/icons/search_icon.png" />
+          <SideNavItem name="Overview" icon={<OverviewIcon />} />;
         </div>
         <div className="payments">
           <h3>Payments</h3>
           <ul>
-            {paymentNavs.map((nav) => {
-              <SideNavItem name={nav.name} icon={nav.icon} />;
-            })}
-            <li className="nav">
-              <DashboardIcon />
-              <p>All Payments</p>
-            </li>
-            <li className="nav">
-              <img src="/assets/icons/search_icon.png" />
-              <p>Reconciled Payments</p>
-            </li>
-            <li className="nav">
-              <img src="/assets/icons/search_icon.png" />
-              <p>Un - Reconciled Payments</p>
-            </li>
-            <li className="nav">
-              <img src="/assets/icons/search_icon.png" />
-              <p>Manual Settlement</p>
-            </li>
+            {paymentNavs.map((nav) => (
+              <SideNavItem name={nav.name} icon={nav.icon} />
+            ))}
           </ul>
         </div>
         <div className="Orders">
           <h3>Orders</h3>
           <ul>
-            <li className="nav">
-              <img src="/assets/icons/search_icon.png" />
-              <p>All Orders</p>
-            </li>
-            <li className="nav">
-              <img src="/assets/icons/search_icon.png" />
-              <p>Reconciled Orders</p>
-            </li>{" "}
+            {orderNavs.map((nav) => (
+              <SideNavItem name={nav.name} icon={nav.icon} />
+            ))}
           </ul>
         </div>
-        <div className="profile nav">
-          <img src="/assets/icons/search_icon.png" />
-          <p>Merchant Profile</p>
+        <div className="profile">
+          <SideNavItem name="Merchant Profile" icon={<UserIcon />} />
         </div>
       </div>
     </div>

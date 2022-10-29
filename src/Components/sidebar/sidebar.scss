@@ -19,7 +19,7 @@
 
     button {
         background-color: #27AE60;
-        padding: 0.9rem 2.5rem;
+        padding: 0.8rem 2.5rem;
         margin: 0 2.5rem;
         color: white;
         border: none;
@@ -31,6 +31,10 @@
         cursor: pointer;
         transition: background-color 0.5s;
         transition: color 0.5s;
+    }
+
+    svg {
+        color: inherit;
     }
 
     button:hover {
