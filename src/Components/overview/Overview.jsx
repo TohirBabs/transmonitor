@@ -1,7 +1,7 @@
-import React from "react";
+import "./overview.scss";
 
 const Overview = () => {
-  return <div>Overview</div>;
+  return <div className="overview">Overview</div>;
 };
 
 export default Overview;

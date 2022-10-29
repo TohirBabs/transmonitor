@@ -4,4 +4,13 @@
     margin: 0;
 }
 
-.dashboard {}
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    &_layout {
+        display: flex;
+        flex: 1;
+    }
+}
