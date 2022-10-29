@@ -11,11 +11,13 @@ const Dashboard = () => {
   var width;
 
   function handleWindowSizeChange(params) {
-    setmobileView(window.innerWidth <= 768);
+    setmobileView(window.innerWidth <= 1110);
     console.log(window.innerWidth);
   }
   useEffect(() => {
     handleWindowSizeChange();
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => window.removeEventListener("resize", handleWindowSizeChange);
   }, []);
 
   return (

@@ -1,14 +1,14 @@
 import { useState } from "react";
 import "./sidebar.scss";
-import { OverviewIcon } from "./icons/OverviewIcon";
-import { WalletIcon } from "./icons/WalletIcon";
-import { ApprovedWalletIcon } from "./icons/ApprovedWalletIcon";
-import { CancelledWalletIcon } from "./icons/CancelledWalletIcon";
-import { SettlementIcon } from "./icons/settlementIcon";
-import { OrderIcon } from "./icons/OrderIcon";
-import { PendingOrderIcon } from "./icons/PendingOrderIcon";
-import { ApprovedOrderIcon } from "./icons/ApprovedOrderIcon";
-import { UserIcon } from "./icons/UserIcon";
+import { OverviewIcon } from "../icons/OverviewIcon";
+import { WalletIcon } from "../icons/WalletIcon";
+import { ApprovedWalletIcon } from "../icons/ApprovedWalletIcon";
+import { CancelledWalletIcon } from "../icons/CancelledWalletIcon";
+import { SettlementIcon } from "../icons/settlementIcon";
+import { OrderIcon } from "../icons/OrderIcon";
+import { PendingOrderIcon } from "../icons/PendingOrderIcon";
+import { ApprovedOrderIcon } from "../icons/ApprovedOrderIcon";
+import { UserIcon } from "../icons/UserIcon";
 
 const Sidebar = () => {
   const paymentNavs = [

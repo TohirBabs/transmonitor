@@ -1,13 +1,12 @@
 import "./navbar.scss";
-import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
-import { BellIcon } from "./icons/BellIcon";
-import { SearchIcon } from "./icons/SearchIcon";
+import { BellIcon } from "../icons/BellIcon";
+import { SearchIcon } from "../icons/SearchIcon";
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="left">
-        <div className="logo">TransMonitor</div>
+        <h1 className="logo">TransMonitor</h1>
         <div className="search">
           <div className="search_icon">
             <SearchIcon />
