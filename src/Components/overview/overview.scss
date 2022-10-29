@@ -1,4 +1,11 @@
 .overview {
     flex: 1;
     background-color: #EEF8FD;
+    padding: 2rem 1.5rem;
+
+    .infocards {
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+    }
 }
