@@ -1,4 +1,5 @@
 import { Infocard } from "../infocard/Infocard";
+import { InfoGraph } from "../infograph/InfoGraph";
 import "./overview.scss";
 
 const Overview = () => {
@@ -17,6 +18,7 @@ const Overview = () => {
           <Infocard name={card.name} value={card.value} />
         ))}
       </div>
+      <InfoGraph />
     </div>
   );
 };

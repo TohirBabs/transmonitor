@@ -1,0 +1,63 @@
+.infograph {
+    width: 60%;
+    min-width: 600px;
+    max-width: 720px;
+    background-color: white;
+    border-radius: 7px;
+
+    img {
+        width: 100%;
+    }
+
+
+    .date {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem;
+
+        .today {
+            color: #4F4F4F;
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+    }
+
+    .selection {
+        display: flex;
+        gap: 4rem;
+        align-items: center;
+
+        .time_period {
+            color: #7F8FA4;
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            border: 1px solid #DDE0E3;
+            border-radius: 4.25px;
+        }
+
+        .arrows {
+            display: flex;
+            gap: 1rem;
+
+            button {
+                background: linear-gradient(0deg, #F2F4F7 0%, #FFFFFF 100%);
+                border: 1px solid #CED0DA;
+                border-radius: 4px;
+                color: #CCCFD4;
+                padding: 0.3rem 0.8rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .months {
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem 0 5rem 0;
+
+        p {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+    }
+}
