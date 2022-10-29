@@ -19,20 +19,22 @@
 
     button {
         background-color: #27AE60;
-        padding: 1rem 2.5rem;
+        padding: 0.9rem 2.5rem;
         margin: 0 2.5rem;
         color: white;
         border: none;
         border-radius: 2rem;
         font-size: 1rem;
+        border: 2px solid #27AE60;
         // font-weight: bold;
         font-family: 'Roboto';
         cursor: pointer;
+        transition: background-color 0.5s;
+        transition: color 0.5s;
     }
 
     button:hover {
         background-color: white;
-        border: 2px solid #27AE60;
         color: #27AE60;
     }
 

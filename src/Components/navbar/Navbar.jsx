@@ -1,4 +1,5 @@
 import "./navbar.scss";
+import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
 
 const Navbar = () => {
   return (
@@ -14,7 +15,7 @@ const Navbar = () => {
         <li>Support</li>
         <li>FAQ</li>
         <li>
-          <img src="/assets/icons/bell_icon.png" alt="" />
+          <NotificationsOutlinedIcon />
           <p className="notification_count">8</p>
         </li>
         <li className="user_info">

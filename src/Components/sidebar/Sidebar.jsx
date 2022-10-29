@@ -1,4 +1,5 @@
 import { useState } from "react";
+import DashboardIcon from "@mui/icons-material/Dashboard";
 import "./sidebar.scss";
 
 const Sidebar = () => {
@@ -33,7 +34,7 @@ const Sidebar = () => {
               <SideNavItem name={nav.name} icon={nav.icon} />;
             })}
             <li className="nav">
-              <img src="/assets/icons/search_icon.png" />
+              <DashboardIcon />
               <p>All Payments</p>
             </li>
             <li className="nav">
