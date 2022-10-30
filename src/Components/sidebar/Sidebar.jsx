@@ -45,7 +45,7 @@ const Sidebar = () => {
           <h3>Main</h3>
           <SideNavItem name="Overview" icon={<OverviewIcon />} />
         </div>
-        <div className="payments">
+        <div className="payment_nav">
           <h3>Payments</h3>
           <ul>
             {paymentNavs.map((nav) => (
