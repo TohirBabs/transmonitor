@@ -40,7 +40,7 @@ export const Payments = () => {
           <div className="transaction_no">1234567890</div>
           <div className="time">12:30</div>
           <div className="status">
-            <span></span> Reconciled
+            <div className="dot"></div> Reconciled
           </div>
         </div>
         <div className="payment_row">
@@ -52,7 +52,7 @@ export const Payments = () => {
           <div className="transaction_no">1234567890</div>
           <div className="time">12:30</div>
           <div className="status">
-            <span></span> Reconciled
+            <div className="dot"></div> Reconciled
           </div>
         </div>
         <div className="payment_row">
@@ -64,7 +64,7 @@ export const Payments = () => {
           <div className="transaction_no">1234567890</div>
           <div className="time">12:30</div>
           <div className="status">
-            <span></span> Reconciled
+            <div className="dot"></div> Reconciled
           </div>
         </div>
         <div className="payment_row">
@@ -76,7 +76,7 @@ export const Payments = () => {
           <div className="transaction_no">1234567890</div>
           <div className="time">12:30</div>
           <div className="status">
-            <span></span> Reconciled
+            <div className="dot"></div> Reconciled
           </div>
         </div>
         <div className="payment_row">
@@ -88,7 +88,7 @@ export const Payments = () => {
           <div className="transaction_no">1234567890</div>
           <div className="time">12:30</div>
           <div className="status">
-            <span></span> Reconciled
+            <div className="dot"></div> Reconciled
           </div>
         </div>
         <div className="payment_row">
@@ -100,7 +100,7 @@ export const Payments = () => {
           <div className="transaction_no">1234567890</div>
           <div className="time">12:30</div>
           <div className="status">
-            <span></span> Reconciled
+            <div className="dot"></div> Reconciled
           </div>
         </div>
         <div className="payment_row">
@@ -112,7 +112,7 @@ export const Payments = () => {
           <div className="transaction_no">1234567890</div>
           <div className="time">12:30</div>
           <div className="status">
-            <span></span> Reconciled
+            <div className="dot"></div> Reconciled
           </div>
         </div>
         <div className="payment_row">
@@ -124,7 +124,7 @@ export const Payments = () => {
           <div className="transaction_no">1234567890</div>
           <div className="time">12:30</div>
           <div className="status">
-            <span></span> Reconciled
+            <div className="dot"></div> Reconciled
           </div>
         </div>
         <div className="payment_row">
@@ -136,7 +136,7 @@ export const Payments = () => {
           <div className="transaction_no">1234567890</div>
           <div className="time">12:30</div>
           <div className="status">
-            <span></span> Reconciled
+            <div className="dot"></div> Reconciled
           </div>
         </div>
         <div className="payment_row">
@@ -148,7 +148,7 @@ export const Payments = () => {
           <div className="transaction_no">1234567890</div>
           <div className="time">12:30</div>
           <div className="status">
-            <span></span> Reconciled
+            <div className="dot"></div> Reconciled
           </div>
         </div>
         <div className="payment_row">
@@ -160,7 +160,7 @@ export const Payments = () => {
           <div className="transaction_no">1234567890</div>
           <div className="time">12:30</div>
           <div className="status">
-            <span></span> Reconciled
+            <div className="dot"></div> Reconciled
           </div>
         </div>
         <div className="payment_row">
@@ -172,7 +172,7 @@ export const Payments = () => {
           <div className="transaction_no">1234567890</div>
           <div className="time">12:30</div>
           <div className="status">
-            <span></span> Reconciled
+            <div className="dot"></div> Reconciled
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 .payments {
     margin: 2rem 0;
     max-width: 1200px;
+    min-width: 570px;
 
     h2 {
         font-size: 2.5rem;
@@ -78,7 +79,77 @@
                     font-size: 1rem;
                 }
             }
+
+            .status {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                .dot {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 1rem;
+                    background-color: #1860EC;
+                }
+
+                width: max-content;
+                border: 1px solid #CCCFD4;
+                border-radius: 30px;
+                padding: 0.8rem;
+            }
         }
     }
 
+    @media (max-width:770px) {
+
+
+        .payment_table {
+
+
+            .header,
+            .payment_row {
+                padding: 0.5rem;
+                font-size: 0.8rem;
+                grid-template-columns: 6fr 2fr 2fr 2fr 2fr;
+            }
+
+
+
+            .payment_row {
+
+                font-size: 0.8rem;
+
+                .type {
+                    gap: 0.6rem;
+
+                    .tag {
+                        padding: 0.3rem;
+
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .status {
+                    gap: 0.6rem;
+
+                    .dot {
+                        width: 6px;
+                        height: 6px;
+                    }
+
+                    border-radius: 30px;
+                    padding: 0.4rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:570px) {
+    .payment_table {
+        width: 100vw;
+
+        overflow-x: scroll;
+    }
 }

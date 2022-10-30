@@ -1,6 +1,6 @@
 .infograph {
     width: 60%;
-    min-width: 600px;
+    min-width: 370px;
     max-width: 720px;
     background-color: white;
     border-radius: 7px;
@@ -14,6 +14,7 @@
         display: flex;
         justify-content: space-between;
         padding: 1.5rem;
+        align-items: center;
 
         .today {
             color: #4F4F4F;
@@ -59,5 +60,37 @@
             font-size: 1rem;
             font-weight: 600;
         }
+    }
+
+    @media (max-width:860px) {
+        .date {
+            padding: 1rem;
+
+            .today {
+                font-size: 1rem;
+            }
+        }
+
+        .selection {
+            gap: 1rem;
+
+            .time_period {
+                padding: 0.3rem 0.8rem;
+                font-size: 0.9rem;
+            }
+
+            .arrows {
+                gap: 0.8rem;
+
+                button {
+
+                    padding: 0.1rem 0.5rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width:620px) {
+        width: 100%;
     }
 }
