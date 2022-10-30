@@ -1,5 +1,6 @@
 import { Infocard } from "../infocard/Infocard";
 import { InfoGraph } from "../infograph/InfoGraph";
+import { Payments } from "../payments/Payments";
 import { TransactionCard } from "../transactioncard/TransactionCard";
 import "./overview.scss";
 
@@ -26,6 +27,7 @@ const Overview = () => {
           <TransactionCard />
         </div>
       </div>
+      <Payments />
     </div>
   );
 };

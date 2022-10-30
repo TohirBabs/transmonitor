@@ -1,0 +1,84 @@
+.payments {
+    margin: 2rem 0;
+    max-width: 1200px;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: normal;
+    }
+
+    .payment_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem;
+        padding-right: 4rem;
+
+        .right {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .search {
+            margin-left: 1rem;
+            display: flex;
+            align-items: center;
+            padding: 0.6rem 1rem;
+            border-radius: 3rem;
+            background-color: rgba(195, 203, 209, 0.1);
+            gap: 1rem;
+
+            .search_icon {
+                cursor: pointer;
+            }
+
+            .search_icon:hover {
+                color: #1860EC;
+            }
+
+            input {
+                font-size: 1rem;
+                color: #647787;
+            }
+        }
+    }
+
+    .payment_table {
+
+        .header,
+        .payment_row {
+            padding: 1rem 2rem;
+            display: grid;
+            align-items: center;
+            grid-template-columns: 8fr 3fr 3fr 2fr 4fr;
+        }
+
+        .header {
+            background-color: #EAEEF0;
+            color: #7F8FA4;
+        }
+
+        .payment_row {
+            border-bottom: 1px solid #CCCFD4;
+            color: #7F8FA4;
+            font-size: 0.9rem;
+
+            .type {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                color: #414042;
+
+                .tag {
+                    padding: 0.6rem;
+                    border-radius: 4rem;
+                    background-color: #7F8FA4;
+                    color: white;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+}
