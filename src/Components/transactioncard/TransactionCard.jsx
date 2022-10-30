@@ -1,4 +1,4 @@
-import React from "react";
+import "./transactioncard.scss";
 
 export const TransactionCard = () => {
   return (
@@ -7,14 +7,14 @@ export const TransactionCard = () => {
       <div className="progress_bar">
         <div className="progress"></div>
       </div>
-      <p>
-        Pending Orders: <span>20</span>{" "}
+      <p className="first">
+        Pending Orders: <span>20</span>
       </p>
-      <p>
+      <p className="sec">
         Reconcilled Orders: <span>80</span>
       </p>
-      <p>
-        Total Orders: <span>100</span>{" "}
+      <p className="third">
+        Total Orders: <span>100</span>
       </p>
     </div>
   );

@@ -1,0 +1,50 @@
+.transaction_card {
+    background-color: white;
+    padding: 0.9rem 1.2rem;
+    border-radius: 5px;
+
+
+    .progress_bar {
+        margin: 1rem 0;
+        height: 4px;
+        background-color: #FDC203;
+        border-radius: 10px;
+
+        .progress {
+            height: 100%;
+            width: 80%;
+            background-color: #27AE60;
+        }
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        margin: 0.6rem 0;
+        color: #262626;
+        font-size: 1rem;
+    }
+
+    .first {
+        span {
+            font-weight: 600;
+            color: #EBC315;
+        }
+    }
+
+    .sec {
+        span {
+            font-weight: 600;
+            color: #27AE60;
+        }
+    }
+
+    .third {
+        span {
+            font-weight: 600;
+            color: #1860EC;
+        }
+    }
+}

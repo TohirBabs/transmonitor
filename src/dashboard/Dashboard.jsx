@@ -8,7 +8,6 @@ import "./dashboard.scss";
 
 const Dashboard = () => {
   const [mobileView, setmobileView] = useState(false);
-  var width;
 
   function handleWindowSizeChange(params) {
     setmobileView(window.innerWidth <= 1110);

@@ -1,5 +1,5 @@
 import "./infograph.scss";
-import { Graph } from "./Graph";
+// import { Graph } from "./Graph";
 
 export const InfoGraph = () => {
   return (
