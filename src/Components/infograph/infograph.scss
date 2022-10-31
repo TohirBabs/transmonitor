@@ -6,6 +6,10 @@
     border-radius: 7px;
     position: relative;
 
+    &:hover {
+        box-shadow: 2.4px 2.4px 3.2px rgba(145, 148, 150, 0.15);
+    }
+
     img {
         width: 100%;
     }

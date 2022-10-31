@@ -3,6 +3,10 @@
     padding: 0.9rem 1.2rem;
     border-radius: 5px;
 
+    &:hover {
+        box-shadow: 2.4px 2.4px 3.2px rgba(145, 148, 150, 0.15);
+    }
+
 
     .progress_bar {
         margin: 1rem 0;
