@@ -128,7 +128,7 @@
         .search {
             display: flex;
             align-items: center;
-            padding: 0.4rem 1rem;
+            padding: 0.4rem 0.8rem;
             border-radius: 3rem;
             background-color: rgba(195, 203, 209, 0.1);
             gap: 1rem;
@@ -160,7 +160,8 @@
 
         button {
             background-color: #27AE60;
-            padding: 0.6rem 1.5rem;
+            padding: 0.6rem 1rem;
+            width: max-content;
             color: white;
             border: none;
             border-radius: 2rem;

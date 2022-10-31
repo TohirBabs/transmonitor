@@ -83,6 +83,8 @@
     @media (max-width:860px) {
         .date {
             padding: 0.5rem;
+            justify-content: center;
+            gap: 1rem;
 
             .today {
                 font-size: 0.9rem;

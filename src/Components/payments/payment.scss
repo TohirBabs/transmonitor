@@ -226,16 +226,23 @@
 
         h2 {
             font-size: 1.5rem;
+            margin-left: 1rem;
+        }
+
+        .table_wrap {
+            width: 100vw;
+            overflow-x: scroll;
         }
 
         .payment_table {
+            min-width: 570px;
 
 
             .header,
             .payment_row {
                 padding: 0.5rem;
                 font-size: 0.8rem;
-                grid-template-columns: 6fr 2fr 2fr 2fr 2fr;
+                grid-template-columns: 8fr 3fr 4fr 3fr 5fr;
             }
 
 
@@ -312,8 +319,7 @@
 
         .payment_info {
             margin: 0.8rem;
-            max-width: 100vw;
-            justify-content: space-between;
+            justify-content: unset;
 
             .search {
                 margin-left: 0;
@@ -327,8 +333,7 @@
 
         .payment_table {
             margin-top: 0.5rem;
-            width: 100vw;
-            overflow-x: scroll;
+
 
 
 
@@ -337,9 +342,6 @@
                 font-size: 0.8rem;
             }
 
-            width: max-content;
-
-            overflow-x: scroll;
 
             .payment_selection {
                 gap: 0.8rem;

@@ -100,20 +100,23 @@ export const Payments = () => {
         </div>
         <PaymentSelection />
       </div>
-      <div className="payment_table">
-        <div className="header">
-          <p>Item Type</p>
-          <p>Price</p>
-          <p>Transaction No</p>
-          <p>Time</p>
-          <p>Status </p>
-        </div>
+      <div className="table_wrap">
+        {" "}
+        <div className="payment_table">
+          <div className="header">
+            <p>Item Type</p>
+            <p>Price</p>
+            <p>Transaction No</p>
+            <p>Time</p>
+            <p>Status </p>
+          </div>
 
-        {paymentSelect === "All"
-          ? paymentStatus.map((payment) => <PaymentRow status={payment} />)
-          : paymentStatus
-              .filter((pay) => pay === paymentSelect)
-              .map((payment) => <PaymentRow status={payment} />)}
+          {paymentSelect === "All"
+            ? paymentStatus.map((payment) => <PaymentRow status={payment} />)
+            : paymentStatus
+                .filter((pay) => pay === paymentSelect)
+                .map((payment) => <PaymentRow status={payment} />)}
+        </div>
       </div>
 
       <div className="bottom">
