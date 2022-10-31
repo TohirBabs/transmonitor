@@ -1,5 +1,7 @@
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import "./infograph.scss";
-// import { Graph } from "./Graph";
 
 export const InfoGraph = () => {
   return (
@@ -9,10 +11,15 @@ export const InfoGraph = () => {
         <div className="selection">
           <div className="time_period">
             <p>1 Jan - 1 Jun</p>
+            <KeyboardArrowDownIcon />
           </div>
           <div className="arrows">
-            <button>&lt;</button>
-            <button>&gt;</button>
+            <button>
+              <KeyboardArrowLeftIcon />
+            </button>
+            <button>
+              <KeyboardArrowRightIcon />
+            </button>
           </div>
         </div>
       </div>
@@ -24,7 +31,15 @@ export const InfoGraph = () => {
         <p>May</p>
         <p>Jun</p>
       </div>
-      {/* <Graph /> */}
+      <div className="lines">
+        <div className=""></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className=""></div>
+      </div>
       <img src="./assets/images/Gradient.png" />
     </div>
   );

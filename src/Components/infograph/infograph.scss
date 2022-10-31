@@ -4,6 +4,7 @@
     max-width: 720px;
     background-color: white;
     border-radius: 7px;
+    position: relative;
 
     img {
         width: 100%;
@@ -23,14 +24,31 @@
         }
     }
 
+    .lines {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 7rem;
+
+        .line {
+            height: 220px;
+            width: 1px;
+            background-color: #CFE8FB;
+        }
+    }
+
     .selection {
         display: flex;
         gap: 4rem;
         align-items: center;
 
         .time_period {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
             color: #7F8FA4;
-            padding: 0.5rem 1rem;
+            padding: 0.3rem 0.4rem;
             font-size: 0.9rem;
             border: 1px solid #DDE0E3;
             border-radius: 4.25px;
@@ -45,7 +63,7 @@
                 border: 1px solid #CED0DA;
                 border-radius: 4px;
                 color: #CCCFD4;
-                padding: 0.3rem 0.8rem;
+                padding: 0 0.3rem;
                 cursor: pointer;
             }
         }
@@ -64,10 +82,10 @@
 
     @media (max-width:860px) {
         .date {
-            padding: 1rem;
+            padding: 0.5rem;
 
             .today {
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
         }
 
@@ -75,8 +93,10 @@
             gap: 1rem;
 
             .time_period {
-                padding: 0.3rem 0.8rem;
-                font-size: 0.9rem;
+                gap: 0.5rem;
+
+                padding: 0.2rem;
+                font-size: 0.8rem;
             }
 
             .arrows {
@@ -84,8 +104,17 @@
 
                 button {
 
-                    padding: 0.1rem 0.5rem;
+                    padding: 0 0;
                 }
+            }
+        }
+
+        .lines {
+
+            top: 6.2rem;
+
+            .line {
+                height: 170px;
             }
         }
     }

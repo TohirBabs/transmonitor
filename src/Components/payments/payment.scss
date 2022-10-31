@@ -20,7 +20,8 @@
             align-items: center;
 
             .showing {
-                font-size: 0.9rem;
+                font-size: 0.85rem;
+                width: max-content;
 
                 .amt_shown {
                     color: #1875F0;
@@ -57,7 +58,7 @@
         }
 
         .open {
-            @keyframes open_menu {
+            @keyframes opener {
                 0% {
                     height: 0;
                 }
@@ -67,11 +68,11 @@
                 }
             }
 
-            animation: open_menu 0.8s both;
+            animation: opener 0.8s both;
         }
 
         .close {
-            @keyframes close_menu {
+            @keyframes closer {
                 0% {
                     height: 165px;
                 }
@@ -81,7 +82,7 @@
                 }
             }
 
-            animation: close_menu 0.8s both;
+            animation: closer 0.8s both;
         }
 
         .payment_selection {
@@ -223,6 +224,9 @@
 
     @media (max-width:770px) {
 
+        h2 {
+            font-size: 1.5rem;
+        }
 
         .payment_table {
 
@@ -297,12 +301,87 @@
         }
     }
 
-}
+    @media (max-width:570px) {
 
-@media (max-width:570px) {
-    .payment_table {
-        width: 100vw;
 
-        overflow-x: scroll;
+
+        .showing {
+
+            display: none;
+        }
+
+        .payment_info {
+            margin: 0.8rem;
+            max-width: 100vw;
+            justify-content: space-between;
+
+            .search {
+                margin-left: 0;
+                padding: 0.3rem;
+                gap: 0.8rem;
+                display: none;
+
+
+            }
+        }
+
+        .payment_table {
+            margin-top: 0.5rem;
+            width: 100vw;
+            overflow-x: scroll;
+
+
+
+            .payment_row {
+
+                font-size: 0.8rem;
+            }
+
+            width: max-content;
+
+            overflow-x: scroll;
+
+            .payment_selection {
+                gap: 0.8rem;
+
+                .selections {
+                    position: absolute;
+                    right: 0;
+                    top: 2.3rem;
+                    overflow: hidden;
+                    list-style: none;
+                    background-color: white;
+                    border-radius: 8px;
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+
+                    li {
+                        width: 10rem;
+                        padding: 0.5rem;
+                        padding-left: 1rem;
+                        font-size: 0.9rem;
+                        color: #414042;
+                        cursor: pointer;
+                    }
+
+                    li:hover {
+                        background-color: #F4F4F4;
+                    }
+                }
+
+                .select {
+                    display: flex;
+                    align-items: center;
+                    width: 7rem;
+                    justify-content: space-between;
+                    color: #414042;
+                    font-size: 0.8rem;
+                    cursor: pointer;
+                    padding: 0.2rem;
+                    border: 1px solid #CED0DA;
+                    border-radius: 2px;
+                }
+            }
+        }
     }
+
 }

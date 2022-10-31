@@ -47,4 +47,10 @@
             color: #1860EC;
         }
     }
+
+    @media (max-width:620px) {
+        p {
+            font-size: 0.9rem;
+        }
+    }
 }
