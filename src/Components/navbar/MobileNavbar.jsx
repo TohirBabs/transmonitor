@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./mobilenavbar.scss";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
 import { OverviewIcon } from "../icons/OverviewIcon";
 import { ApprovedWalletIcon } from "../icons/ApprovedWalletIcon";
@@ -60,11 +61,19 @@ export const MobileNavbar = () => {
             <BellIcon />
             <p className="notification_count">8</p>
           </div>
-          <MenuIcon
-            onClick={() => {
-              setmenuOpen(!menuOpen);
-            }}
-          />
+          {menuOpen ? (
+            <CloseIcon
+              onClick={() => {
+                setmenuOpen(!menuOpen);
+              }}
+            />
+          ) : (
+            <MenuIcon
+              onClick={() => {
+                setmenuOpen(!menuOpen);
+              }}
+            />
+          )}
         </div>
       </div>
       <div className={`menu ${menuOpen ? "open" : "close"}`}>
