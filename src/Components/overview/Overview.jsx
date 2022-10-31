@@ -23,8 +23,36 @@ const Overview = () => {
       <div className="dashboard_info">
         <InfoGraph />
         <div className="transaction_data">
-          <TransactionCard />
-          <TransactionCard />
+          <div className="transaction_card">
+            <h3>Orders</h3>
+            <div className="progress_bar">
+              <div className="progress"></div>
+            </div>
+            <p className="first">
+              Pending Orders: <span>20</span>
+            </p>
+            <p className="sec">
+              Reconcilled Orders: <span>80</span>
+            </p>
+            <p className="third">
+              Total Orders: <span>100</span>
+            </p>
+          </div>
+          <div className="transaction_card">
+            <h3>Payments</h3>
+            <div className="progress_bar">
+              <div className="progress"></div>
+            </div>
+            <p className="first">
+              Un-reconciled Payments: <span>20</span>
+            </p>
+            <p className="sec">
+              Reconcilled Payments: <span>80</span>
+            </p>
+            <p className="third">
+              Total Payments: <span>100</span>
+            </p>
+          </div>
         </div>
       </div>
       <Payments />
