@@ -14,6 +14,7 @@ import { UserIcon } from "../icons/UserIcon";
 import { WalletIcon } from "../icons/WalletIcon";
 import { SearchIcon } from "../icons/SearchIcon";
 import { BellIcon } from "../icons/BellIcon";
+import { Botin } from "../botin/Botin";
 
 export const MobileNavbar = () => {
   const paymentNavs = [
@@ -85,7 +86,12 @@ export const MobileNavbar = () => {
 
             <input type="text" placeholder="Search..." />
           </div>
-          <button className="cta">GENERATE INVOICE</button>
+          <Botin
+            text="generate invoice"
+            size="large "
+            background="#27AE60"
+            color="white"
+          />
         </div>
         <div className="navigation">
           <div className="main_nav">
