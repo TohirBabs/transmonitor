@@ -57,33 +57,7 @@
             }
         }
 
-        .open {
-            @keyframes opener {
-                0% {
-                    height: 0;
-                }
-
-                100% {
-                    height: 165px;
-                }
-            }
-
-            animation: opener 0.8s both;
-        }
-
-        .close {
-            @keyframes closer {
-                0% {
-                    height: 165px;
-                }
-
-                100% {
-                    height: 0;
-                }
-            }
-
-            animation: closer 0.8s both;
-        }
+        
 
         .payment_selection {
             display: flex;
