@@ -11,7 +11,6 @@ const Navbar = () => {
           <div className="search_icon">
             <SearchIcon />
           </div>
-
           <input type="text" placeholder="Search..." />
         </div>
       </div>
@@ -25,7 +24,7 @@ const Navbar = () => {
         <li className="user_info">
           <div className="username">
             <p>Hello</p>
-            <p>Oluwaleke Ojo</p>
+            <p>Oluwalek Ojo</p>
           </div>
           <img src="/assets/images/avatar.png" alt="" />
         </li>
