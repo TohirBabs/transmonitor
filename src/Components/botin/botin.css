@@ -1,0 +1,77 @@
+@keyframes loadProgress {
+  0% {
+    width: 1.5rem;
+  }
+  30% {
+    width: 3rem;
+  }
+  60% {
+    width: 7rem;
+  }
+
+  90% {
+    width: 13rem;
+  }
+  100% {
+    width: 14.9rem;
+  }
+}
+
+@keyframes loadBotinsm {
+  0% {
+    font-size: 0.7rem;
+    width: calc(12 * 0.7rem);
+    height: calc(3.5 * 0.7rem);
+  }
+
+  100% {
+    font-size: calc(0.9 * 0.7rem);
+
+    width: calc(20 * 0.7rem);
+    height: calc(2.5 * 0.7rem);
+  }
+}
+@keyframes loadBotinmd {
+  0% {
+    font-size: 0.9rem;
+
+    width: calc(12 * 0.9rem);
+    height: calc(3.5 * 0.9rem);
+  }
+
+  100% {
+    font-size: calc(0.9 * 0.9rem);
+
+    width: calc(20 * 0.9rem);
+    height: calc(2.5 * 0.9rem);
+  }
+}
+@keyframes loadBotinlg {
+  0% {
+    font-size: 1.2rem;
+
+    width: calc(12 * 1.2rem);
+    height: calc(3.5 * 1.2rem);
+  }
+
+  100% {
+    font-size: calc(0.9 * 1.2rem);
+
+    width: calc(20 * 1.2rem);
+    height: calc(2.5 * 1.2rem);
+  }
+}
+
+.loading_sm {
+  animation: loadBotinsm 1s both;
+}
+.loading_md {
+  animation: loadBotinmd 1s both;
+}
+.loading_lg {
+  animation: loadBotinlg 1s both;
+}
+
+/* .botin:active {
+  animation: botinClicked 0.4s both;
+} */
