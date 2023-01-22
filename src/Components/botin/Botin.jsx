@@ -82,7 +82,7 @@ export const Botin = ({
     width: calc(20 * ${fontSize} - 6px);
     border-radius: 2rem;
     background-color: ${color};
-    animation: ${loadProgress} 8s both;
+    animation: ${loadProgress} 7s both;
     color: ${background};
     overflow: hidden;
     z-index: 100;
