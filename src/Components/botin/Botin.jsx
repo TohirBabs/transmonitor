@@ -33,7 +33,7 @@ export const Botin = ({
     width: 0;
   }
   15% {
-        height: calc(2.5 * ${fontSize} - 6px);
+        height: calc(2.5 * ${fontSize} - 5px);
     width: calc(2.5 * ${fontSize} - 6px);
   }
   30% {
