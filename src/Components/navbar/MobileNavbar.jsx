@@ -54,7 +54,7 @@ export const MobileNavbar = () => {
           <div className="user_info">
             <div className="username">
               <p>Hello</p>
-              <p>Oluwaleke Ojo</p>
+              <p>Oluwalek Ojo</p>
             </div>
             <img src="/assets/images/avatar.png" alt="" />
           </div>
