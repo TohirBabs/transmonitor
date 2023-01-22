@@ -11,7 +11,7 @@ const Navbar = () => {
           <div className="search_icon">
             <SearchIcon />
           </div>
-          <input type="text" placeholder="Search..." />
+          <input type="text" placeholder="Search...." />
         </div>
       </div>
       <ul className="right">
