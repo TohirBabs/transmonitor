@@ -24,7 +24,7 @@ const Navbar = () => {
         <li className="user_info">
           <div className="username">
             <p>Hello</p>
-            <p>Oluwalek Ojo</p>
+            <p>Oluwaleke Ojo</p>
           </div>
           <img src="/assets/images/avatar.png" alt="" />
         </li>
